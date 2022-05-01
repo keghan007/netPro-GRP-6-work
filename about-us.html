@@ -5,13 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>netPro Inc.|About </title>
-  <link rel="shortcut icon" href="images/logo.svg" >
+  <link rel="shortcut icon" href="images/logo.svg">
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/styles.css" />
-  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-  <!-- <link rel="stylesheet" href="css/aos.css"> -->
+  <link rel="stylesheet" href="css/aos.css">
 </head>
 
 <body>
@@ -36,7 +35,7 @@
           netPro Web Consultancy
         </h1>
         <p class="hero__tagline">
-         Want to know more about us? 
+          Want to know more about us?
         </p>
         <a href="#know-about" class="btn btn--accent btn--stretched">Know About Us</a>
         <div class="end-page"><a href="#footer" class="link-arrow">End Page</a></div>
@@ -79,7 +78,7 @@
       </picture>
     </article>
     <article class="grid grid--1x2 feature">
-      <div class="feature__content">
+      <div class="feature__content" data-aos="fade-right">
         <span class="icon-container">
           <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#computer"></use>
@@ -92,14 +91,14 @@
         </p>
         <a href="#" class="link-arrow">Learn More</a>
       </div>
-      <picture>
+      <picture data-aos="zoom-in-left">
         <source type="image/webp" srcset="images/fast.webp 1x, images/fast@2x.webp 2x" />
         <source type="image/jpg" srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x" />
         <img class="feature__image" src="images/fast@2x.jpg" alt="" />
       </picture>
     </article>
     <article class="grid grid--1x2 feature">
-      <div class="feature__content">
+      <div class="feature__content" data-aos="zoom-in-left">
         <span class="icon-container">
           <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -112,14 +111,14 @@
         </p>
         <a href="#" class="link-arrow">Learn More</a>
       </div>
-      <picture>
+      <picture data-aos="fade-right">
         <source type="image/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x" />
         <source type="image/jpg" srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x" />
         <img class="feature__image" src="images/wordpress@2x.jpg" alt="" />
       </picture>
     </article>
     <article class="grid grid--1x2 feature">
-      <div class="feature__content">
+      <div class="feature__content" data-aos="fade-right">
         <span class="icon-container">
           <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#clock"></use>
@@ -132,7 +131,7 @@
         </p>
         <a href="#" class="link-arrow">Learn More</a>
       </div>
-      <picture>
+      <picture data-aos="zoom-in-left">
         <source type="image/webp" srcset="images/support.webp 1x, images/support@2x.webp 2x" />
         <source type="image/jpg" srcset="images/support.jpg 1x, images/support@2x.jpg 2x" />
         <img class="feature__image" src="images/support@2x.jpg" alt="" />
@@ -142,7 +141,7 @@
 
   <section class="block block--dark block--skewed-right block-showcase">
     <header class="block__header">
-      <h2>User-friendly Control Panel</h2>
+      <h2 data-aos="fade-up">User-friendly Control Panel</h2>
     </header>
     <div class="container grid grid--1x2">
       <picture data-aos="fade-right" class="block-showcase__image">
@@ -205,56 +204,22 @@
       </ul>
     </div>
   </section>
-  
+
   <div class="small-space"></div>
   <!-- End of services section  -->
 
 
-   <!-- Testimonials from our consumers -->
-   <header class="block__header">
-    <h2>What our Customers are Saying</h2>
-    <p>
+  <!-- Testimonials from our consumers -->
+  <header class="block__header">
+    <h2 data-aos="fade-up">What our Customers are Saying</h2>
+    <p data-aos="fade-up">
       These are some of the testimonials receive from our consumers.
     </p>
-   </header>
+  </header>
 
-   <section class="block testm">
-     <div class="test-box"><div class="card testimonial">
-      <div class="grid grid--1x2">
-        <div class="testimonial__image">
-          <img src="images/testimonial.jpg" alt="A happy, smiling customer" />
-          <span class="icon-container icon-container--accent">
-            <svg class="icon icon--white icon--small">
-              <use xlink:href="images/sprite.svg#quotes"></use>
-            </svg>
-          </span>
-        </div>
-        <blockquote class="quote">
-          <p class="quote__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Incidunt optio officiis dolore earum error eaque perferendis
-            laudantium sed praesentium dolorum.
-          </p>
-          <footer>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary quote__line">
-                  <use xlink:href="images/sprite.svg#line"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title quote__author">Kwesi Manu Eghan</h3>
-                <p class="quote__organization">CEO netPro
-                  Consultancy
-                </p>
-              </div>
-            </div>
-          </footer>
-        </blockquote>
-      </div>
-    </div></div>
-
-     <div class="test-box"><div class="card testimonial">
+  <section class="block testm">
+    <div class="test-box" data-aos="fade-right">
+      <div class="card testimonial">
         <div class="grid grid--1x2">
           <div class="testimonial__image">
             <img src="images/testimonial.jpg" alt="A happy, smiling customer" />
@@ -287,80 +252,122 @@
             </footer>
           </blockquote>
         </div>
-      </div></div>
-     <div class="test-box"><div class="card testimonial">
-      <div class="grid grid--1x2">
-        <div class="testimonial__image">
-          <img src="images/testimonial.jpg" alt="A happy, smiling customer" />
-          <span class="icon-container icon-container--accent">
-            <svg class="icon icon--white icon--small">
-              <use xlink:href="images/sprite.svg#quotes"></use>
-            </svg>
-          </span>
-        </div>
-        <blockquote class="quote">
-          <p class="quote__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Incidunt optio officiis dolore earum error eaque perferendis
-            laudantium sed praesentium dolorum.
-          </p>
-          <footer>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary quote__line">
-                  <use xlink:href="images/sprite.svg#line"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title quote__author">Kwesi Manu Eghan</h3>
-                <p class="quote__organization">CEO netPro
-                  Consultancy
-                </p>
-              </div>
-            </div>
-          </footer>
-        </blockquote>
       </div>
-    </div></div>
-     <div class="test-box"><div class="card testimonial">
-      <div class="grid grid--1x2">
-        <div class="testimonial__image">
-          <img src="images/testimonial.jpg" alt="A happy, smiling customer" />
-          <span class="icon-container icon-container--accent">
-            <svg class="icon icon--white icon--small">
-              <use xlink:href="images/sprite.svg#quotes"></use>
-            </svg>
-          </span>
+    </div>
+
+    <div class="test-box" data-aos="fade-left">
+      <div class="card testimonial">
+        <div class="grid grid--1x2">
+          <div class="testimonial__image">
+            <img src="images/testimonial.jpg" alt="A happy, smiling customer" />
+            <span class="icon-container icon-container--accent">
+              <svg class="icon icon--white icon--small">
+                <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+            </span>
+          </div>
+          <blockquote class="quote">
+            <p class="quote__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt optio officiis dolore earum error eaque perferendis
+              laudantium sed praesentium dolorum.
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Kwesi Manu Eghan</h3>
+                  <p class="quote__organization">CEO netPro
+                    Consultancy
+                  </p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
         </div>
-        <blockquote class="quote">
-          <p class="quote__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Incidunt optio officiis dolore earum error eaque perferendis
-            laudantium sed praesentium dolorum.
-          </p>
-          <footer>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary quote__line">
-                  <use xlink:href="images/sprite.svg#line"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title quote__author">Kwesi Manu Eghan</h3>
-                <p class="quote__organization">CEO netPro
-                  Consultancy
-                </p>
-              </div>
-            </div>
-          </footer>
-        </blockquote>
       </div>
-    </div></div>
+    </div>
+    <div class="test-box" data-aos="fade-right">
+      <div class="card testimonial">
+        <div class="grid grid--1x2">
+          <div class="testimonial__image">
+            <img src="images/testimonial.jpg" alt="A happy, smiling customer" />
+            <span class="icon-container icon-container--accent">
+              <svg class="icon icon--white icon--small">
+                <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+            </span>
+          </div>
+          <blockquote class="quote">
+            <p class="quote__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt optio officiis dolore earum error eaque perferendis
+              laudantium sed praesentium dolorum.
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Kwesi Manu Eghan</h3>
+                  <p class="quote__organization">CEO netPro
+                    Consultancy
+                  </p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <div class="test-box" data-aos="fade-left">
+      <div class="card testimonial">
+        <div class="grid grid--1x2">
+          <div class="testimonial__image">
+            <img src="images/testimonial.jpg" alt="A happy, smiling customer" />
+            <span class="icon-container icon-container--accent">
+              <svg class="icon icon--white icon--small">
+                <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+            </span>
+          </div>
+          <blockquote class="quote">
+            <p class="quote__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt optio officiis dolore earum error eaque perferendis
+              laudantium sed praesentium dolorum.
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Kwesi Manu Eghan</h3>
+                  <p class="quote__organization">CEO netPro
+                    Consultancy
+                  </p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
   </section>
 
   <div class="small-space"></div>
 
-<!-- Callout section -->
+  <!-- Callout section -->
   <div class="container">
     <div class="callout callout--primary callout-signup">
       <div class="grid grid--1x2">
@@ -372,12 +379,12 @@
             cupiditate quas cum fugit.
           </p>
         </div>
-        <a href="login.html" class="btn btn--secondary btn--stretched">Get Started</a>
+        <a href="login.html" class="btn btn--secondary btn--stretched" data-aos="fade-down-left">Get Started</a>
       </div>
     </div>
   </div>
 
- 
+
   <!-- footer -->
   <footer class="block block--dark footer" id="footer">
     <div class="container grid footer__sections">
@@ -450,7 +457,7 @@
       <div class="to-up">
         <p>^</p>
       </div>
-  </a>
+    </a>
   </footer>
   <script src="js/main.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -458,4 +465,5 @@
     AOS.init();
   </script>
 </body>
+
 </html>
