@@ -1,0 +1,285 @@
+:root {
+    --color-primary: #2c7be2;
+    --color-secondary: #10b9d6;
+    --color-accent: #e25a00de;
+    --color-headings: #001b57;
+    --color-body: #918ca4;
+    --color-body-darker: #15025f;
+    --color-border: #ccc;
+    --color-theme: linear-gradient(#350808, #010416);
+    --border-radius: 30px;
+}
+
+html {
+    /* Setting a relative font size for my document */
+    font-size: 62.5%;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 200vh;
+    position: relative;
+    background: linear-gradient(-30deg, #010416bd, #340fca, #350808b6, #eb6207de ,#06a57d);
+    background-size: 400% 400%;
+    animation: gradient 16s ease infinite;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* To place form in center */
+.my-form {
+    font-size: 1.6rem;
+    font-weight: 500;
+    left: 50%;
+    background: #fff;
+    max-width: 550px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    padding: 6rem;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 10px #00000033;
+    accent-color: var(--color-headings);
+    padding-bottom: 15px;
+    opacity: 0.85;
+}
+
+h1 {
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
+    /* text-transform: capitalize; */
+}
+
+h2 {
+    text-align: left;
+    font-size: 2.3rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    color: var(--color-headings);
+    border-bottom: 1.5px solid var(--color-body);
+
+}
+
+.main-icon {
+    /* margin: 0 auto; */
+    fill: #000;
+    overflow: visible;
+    height: 115px;
+    width: 165px;
+    margin-bottom: 0;
+}
+
+.form-grp {
+    margin-bottom: 1rem;
+
+
+
+}
+
+.input-fld {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 1.6rem;
+    outline: none;
+}
+
+::placeholder {
+    color: var(--color-headings);
+}
+
+.input-fld:focus, .input-fld:hover {
+    box-shadow: 1px 1px 2px 2px #b9d3fa;
+    border-color: #86b7fe;
+    transition-duration: 0.8s;
+}
+
+.payment {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.pay {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.remb {
+    margin: 6px 6px;
+
+}
+
+#check {
+    margin-right: 0;
+}
+
+.input-fld,
+.btn {
+    width: 100%;
+    padding: 1.3rem;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 1px solid dodgerblue;
+}
+
+.btn--submit {
+    font-size: inherit;
+    border: 2px solid #0d6efd;
+    color: #0d6efd;
+    width: 60%;
+}
+
+.btn--reset,
+.btn--submit {
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.btn--reset {
+    width: 30%;
+    border: 2px solid #fd450d;
+    color: #fd450d;
+    font-size: inherit;
+}
+
+.order-details {
+
+    padding: 10px;
+}
+
+
+.btn:focus,
+.btn:hover {
+    background: #0d6efd;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+.btn-reset:focus,
+.btn--reset:hover {
+    background: #fd450d;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+
+.copy {
+    opacity: 0.5;
+    position: relative;
+    bottom: -5px;
+}
+
+
+.form-option {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+.link-arrow {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.link-arrow::after {
+    content: "-->";
+    margin-left: 5px;
+    transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+    margin-left: 10px;
+}
+
+
+/* Icons */
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon--small {
+    width: 30px;
+    height: 30px;
+}
+
+.icon--tiny {
+    width: 25px;
+    height: 25px;
+}
+
+.icon--primary {
+    fill: var(--color-primary);
+}
+
+.icon--white {
+    fill: #fff;
+}
+
+.icon-container {
+    background: #f3f9fa;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container--neutral {
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 7px;
+    left: 2px;
+}
+
+.icon-container--accent {
+    background: var(--color-accent);
+}
+
+
+.pay-icon {
+    margin-left: 3px;
+    margin-right: 5px;
+}
+
+.paypal{
+    margin-left: 15px;
+
+}

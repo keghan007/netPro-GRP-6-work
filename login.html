@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netPro |Sign Up</title>
+    <link rel="stylesheet" href="css/style-login.css">
+    <link rel="stylesheet" href="css/aos.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="my-form" action="https://formspree.io/f/xnqwoqrv" method="POST">
+            <img class="main-icon" src="logo/netPro/netpro.svg" alt="">
+            <h1>Subscribe to netPro</h1>
+            <h2>Customer Info</h2>
+            <div class="form-grp">
+                <input class="input-fld" type="text" name="name" required autofocus placeholder="Name">
+            </div>
+            <div class="form-grp">
+                <input class="input-fld" type="text" name="organisation" required placeholder="Organisation">
+            </div>
+            <div class="form-grp">
+                <input class="input-fld" type="text" name="job" required placeholder="Job title">
+            </div>
+            <div class="form-grp">
+                <input class="input-fld number-input" maxlength="5" type="text" name="postcode" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required
+                    placeholder="Postcode">
+            </div>
+            <div class="form-grp">
+                <input class="input-fld number-input" type="tel" name="telephone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required minlength="9" maxlength="12"
+                    placeholder="Telephone Number">
+            </div>
+
+            <h2>Member Plan</h2>
+            <div class="form-grp plan-option">
+                <span>
+                    <input type="radio" id="check__plan" name="check__plan" value="premium">
+                    <label for="premium">Premium<span class="icon-container--neutral">
+                            <svg class="icon icon--primary icon--tiny">
+                                <img class="pay-icon" width="20px" height="20px" src="images/icons/premium.svg" alt="">
+                            </svg>
+                        </span></label>
+                </span>
+                <span>
+                    <input type="radio" id="check__plan" name="check__plan" value="popular">
+                    <label for="popular">Popular<span class="icon-container--neutral">
+                            <svg class="icon icon--primary icon--tiny">
+                                <img class="pay-icon" width="20px" height="20px" src="images/icons/popular.svg" alt="">
+                            </svg>
+                        </span></label>
+                </span>
+                <span>
+                    <input type="radio" id="check__plan" name="check__plan" value="beginner">
+                    <label for="platinum">Platinum<span class="icon-container--neutral">
+                            <svg class="icon icon--primary icon--tiny">
+                                <img class="pay-icon" width="20px" height="20px" src="images/icons/plat.png" alt="">
+                            </svg>
+                        </span></label>
+                </span>
+            </div>
+
+            <h2>Payment Option</h2>
+            <div class="form-grp payment">
+                <span>
+                    <input type="radio" id="check" name="payment" value="Cash">
+                    <label for="check">Cash<span class="icon-container--neutral">
+                            <svg class="icon icon--primary icon--tiny">
+                                <img class="pay-icon" width="25px" height="25px" src="images/icons/money.svg" alt="">
+                            </svg>
+                        </span></label>
+                </span>
+                <span>
+                    <input type="radio" id="check" name="payment" checked value="Credit Card">
+                    <label for="check">Visa Card<span class="icon-container--neutral">
+                            <svg class="icon icon--primary icon--tiny">
+                                <img class="pay-icon" width="30px" height="30px" src="images/icons/visa-credit-card.svg"
+                                    alt="">
+                            </svg>
+                        </span></label>
+                </span>
+                <div>
+                    <span>
+                        <input type="radio" id="check" name="payment" value="Credit Card">
+                        <label for="check">
+                            Master Card<span class="icon-container--neutral">
+                                <svg class="icon icon--primary icon--tiny">
+                                    <img class="pay-icon" width="25px" height="25px" src="images/icons/mastercard.svg"
+                                        alt="">
+                                </svg>
+                            </span></label>
+                    </span>
+                    <span>
+                        <input type="radio" id="check" name="payment" value="Credit Card">
+                        <label for="check">Paypal<span class="icon-container--neutral">
+                                <svg class="icon icon--primary icon--tiny">
+                                    <img class="pay-icon paypal" width="35px" height="35px"
+                                        src="images/icons/paypal.svg" alt="">
+                                </svg>
+                            </span></label>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-grp">
+                <p>Return to <a class="link-arrow" href="index.html">Home page</a></p>
+            </div>
+
+            <div class="form-grp">
+                <input type="checkbox" id="check" name="newsletter">
+                <label for="check">I would like to receive the monthly newsletter</span>
+            </div>
+
+            <div class="form-option">
+                <button class="btn btn--submit" type="submit">Subscribe</button>
+                <button class="btn btn--reset" type="reset">Clear</button>
+            </div>
+            <p class="copy">Copyright netPro &copy; 2022</p>
+        </form>
+    </div>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
