@@ -28,6 +28,7 @@ body {
     background: linear-gradient(-30deg, #010416bd, #340fca, #350808b6, #eb6207de ,#06a57d);
     background-size: 400% 400%;
     animation: gradient 16s ease infinite;
+   
 }
 
 
@@ -282,4 +283,20 @@ a {
 .paypal{
     margin-left: 15px;
 
+}
+
+@media screen and (min-width:200px) and (max-width:767px) {
+    .form-grp , .form-option {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form-option{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-option .btn{
+        margin-bottom: 5px;
+    }
 }
