@@ -955,6 +955,10 @@ a {
   }
 }
 
+
+
+
+
 /* Sign-up Callout */
 .callout-signup {
   transform: translateY(5rem);
@@ -984,6 +988,14 @@ a {
   gap: 5px;
 }
 
+.test-box {
+  height: 100%;
+}
+
+.test-box .testimonial{
+  height: 100%;
+}
+
 @media screen and (min-width: 1024px) {
   .testm {
     height: auto;
@@ -1002,4 +1014,12 @@ a {
 
 .small-space {
   height: 50px;
+}
+
+
+/* Authors */
+#authors .card p {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
 }
